@@ -1,6 +1,7 @@
 def reverse_each_word(string)
+  new_array =[]
   array = string.split
-  array.each{|change| change.reverse}
+  array.each{|change| new_array.push(change.reverse)}
+  return  new_array
 end
 
-reverse_each_word("Hello there, and how are you?")
